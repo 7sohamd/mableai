@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build and compilation outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Environment and local configurations
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# Testing coverage and cache
+coverage/
+.vitest/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
