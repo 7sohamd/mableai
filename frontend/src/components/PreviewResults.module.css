@@ -23,24 +23,24 @@
 
 .summaryValue {
   font-size: 2rem;
-  font-weight: 800;
-  color: var(--color-primary);
+  font-weight: 500;
+  color: var(--color-text-primary);
   letter-spacing: -0.02em;
   line-height: 1;
 }
 
 .summaryAudienceName {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--color-text-primary);
 }
 
 .summaryLabel {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Empty state */
@@ -57,18 +57,20 @@
 }
 
 .emptyIcon {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   line-height: 1;
+  opacity: 0.8;
 }
 
 .emptyTitle {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 500;
   color: var(--color-text-primary);
 }
 
 .emptySubtitle {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  font-weight: 300;
   color: var(--color-text-secondary);
   max-width: 360px;
 }
@@ -103,7 +105,7 @@
   font-family: var(--font-mono);
   font-size: 0.88rem;
   color: var(--color-text-primary);
-  font-weight: 500;
+  font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -112,14 +114,14 @@
 .anonBadge {
   flex-shrink: 0;
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 2px 8px;
   border-radius: 9999px;
-  background: rgba(20, 184, 166, 0.12);
-  color: var(--color-accent-teal);
-  border: 1px solid rgba(20, 184, 166, 0.3);
+  background: rgba(255, 255, 255, 0.06);
+  color: #e4e4e7;
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 /* Evidence */
@@ -132,7 +134,7 @@
 
 .evidenceHeading {
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
@@ -148,7 +150,7 @@
 }
 
 .evidenceType {
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-text-secondary);
   text-transform: capitalize;
   min-width: 120px;
@@ -156,16 +158,19 @@
 
 .evidenceDetail {
   color: var(--color-text-secondary);
+  font-weight: 300;
   flex: 1;
 }
 
 .evidenceDetail strong {
-  color: var(--color-accent-teal);
+  color: #ffffff;
+  font-weight: 500;
 }
 
 .evidenceWindow {
   font-size: 0.78rem;
   color: var(--color-text-muted);
   font-family: var(--font-mono);
+  font-weight: 300;
   white-space: nowrap;
 }
