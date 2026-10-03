@@ -5,10 +5,6 @@ import type {
   ApiErrorResponse,
 } from '../contracts/audiencePreview';
 
-/**
- * A domain error carrying a structured API error payload.
- * Thrown by previewAudience when the backend returns a non-2xx response.
- */
 export class ApiError extends Error {
   constructor(
     public readonly statusCode: number,
@@ -19,17 +15,6 @@ export class ApiError extends Error {
   }
 }
 
-/**
- * Calls POST /v1/audiences/preview.
- *
- * Throws:
- *   - ApiError        when the server returns a structured error (4xx / 5xx)
- *   - Error           for network failures (fetch rejects)
- *
- * Never invents field names. The request body exactly matches the backend
- * AudiencePreviewRequest contract; the returned value exactly matches
- * AudiencePreviewResponse.
- */
 export async function previewAudience(
   request: AudiencePreviewRequest
 ): Promise<AudiencePreviewResponse> {

@@ -5,7 +5,6 @@ interface PreviewResultsProps {
   result: AudiencePreviewResponse;
 }
 
-/** Format an ISO 8601 timestamp as a short human-readable date. */
 function fmtDate(iso: string): string {
   try {
     return new Date(iso).toLocaleDateString('en-US', {
@@ -40,7 +39,6 @@ export function PreviewResults({ result }: PreviewResultsProps) {
 
   return (
     <section className={styles.wrapper} aria-label="Audience preview results" aria-live="polite">
-      {/* Summary bar */}
       <div className={styles.summary}>
         <div className={styles.summaryItem}>
           <span className={styles.summaryValue}>{result.totalMatchedUsers}</span>
