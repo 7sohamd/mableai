@@ -336,7 +336,7 @@ export const App = () => {
         <div className={isDirty ? styles.staleWrapper : undefined}>
           {isDirty && (
             <div className={styles.staleBanner} role="status">
-              ⚡ Rules have changed — results below may be out of date. Run another preview to refresh.
+               Rules have changed — results below may be out of date. Run another preview to refresh.
             </div>
           )}
           <PreviewResults result={previewState.result} />
